@@ -19,8 +19,8 @@ public class DecimalToAny {
         int pow = 1;
 
         while( n != 0){
-            int digit = n % 10 ;
-            n = n / 10;
+            int digit = n % b ;
+            n = n / b;
             res += digit * pow;
             pow *= 10;
         }
