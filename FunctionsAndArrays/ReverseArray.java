@@ -22,7 +22,7 @@ public class ReverseArray {
             int temp = a[i];
             a[i] = a[j];
             a[j] = temp;
-            i++;
+            i++; 
             j--;
         }
     }
