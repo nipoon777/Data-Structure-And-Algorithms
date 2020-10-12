@@ -11,5 +11,6 @@ public class NoDigits {
             count++;
         }
         System.out.println(count);
+        scn.close();
     }    
 }

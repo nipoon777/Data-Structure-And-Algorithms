@@ -28,6 +28,7 @@ public class BarChart {
             }
             System.out.println();
         }
+        scn.close();
 
 
     }    

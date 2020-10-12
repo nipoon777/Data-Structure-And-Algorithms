@@ -23,5 +23,6 @@ public class Pattern20 {
             }
             System.out.println();
         }
+        scn.close();
     }
 }

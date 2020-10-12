@@ -32,6 +32,7 @@ public static void main(String[] args) {
         st++;
         System.out.println();
         }
-        
+        scn.close();
     }
+    
 }

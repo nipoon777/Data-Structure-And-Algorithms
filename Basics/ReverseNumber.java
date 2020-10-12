@@ -12,5 +12,6 @@ public class ReverseNumber {
 
             System.out.println(digit);
         }
+        scn.close();
     }    
 }

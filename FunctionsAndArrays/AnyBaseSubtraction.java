@@ -12,6 +12,7 @@ import java.util.*;
   
       int d = getDifference(b, n1, n2);
       System.out.println(d);
+      scn.close();
    }
   
    public static int getDifference(int b, int n1, int n2){

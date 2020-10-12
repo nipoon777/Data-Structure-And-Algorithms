@@ -16,7 +16,7 @@ public class GradingSystem {
         System.out.println("meets expectations");
         else
         System.out.println("below par");
-        
+        sc.close();
     }
     
 }

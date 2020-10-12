@@ -22,6 +22,7 @@ public class DigitsOfNumber {
             n = n % pow;
             pow = pow / 10;
         }
+        scn.close();
 
 
     }    

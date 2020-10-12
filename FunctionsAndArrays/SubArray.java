@@ -1,6 +1,6 @@
 package FunctionsAndArrays;
 
-import java.io.*;
+
 import java.util.*;
 
 public class SubArray{
@@ -27,6 +27,7 @@ public static void main(String[] args) throws Exception {
         }
         
     }
+    sc.close();
  }
 
 }

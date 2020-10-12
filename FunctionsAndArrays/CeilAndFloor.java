@@ -1,6 +1,6 @@
 package FunctionsAndArrays;
 
-import java.io.*;
+
 import java.util.*;
 
 public class CeilAndFloor{
@@ -42,6 +42,7 @@ public static void main(String[] args) throws Exception {
     
     System.out.println(ceil);
     System.out.println(floor);
+    scn.close();
     
  }
 

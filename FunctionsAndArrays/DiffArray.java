@@ -1,5 +1,5 @@
 package FunctionsAndArrays;
-import java.io.*;
+
 import java.util.*;
 
 public class DiffArray{
@@ -61,6 +61,7 @@ public static void main(String[] args) throws Exception {
     while(idx < darr.length){
         System.out.println(darr[idx++]);
     }
+    scn.close();
     
     
  }

@@ -20,6 +20,7 @@ public class RotateNumber {
         int rem = n % div;
         n = n / div;
         System.out.println(mul*rem + n);
+        scn.close();
 
     }
 }

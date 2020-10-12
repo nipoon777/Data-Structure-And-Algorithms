@@ -1,7 +1,7 @@
 package FunctionsAndArrays;
 
 import java.io.*;
-import java.util.*;
+
 
 public class Rotate{
   public static void display(int[] a){

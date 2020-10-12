@@ -10,6 +10,7 @@ public class FrequencyDigits {
         int d = scn.nextInt();
         int f = getDigitFrequency(n, d);
         System.out.println(f);
+        scn.close();
     }
 
     public static int getDigitFrequency(int n, int d) {

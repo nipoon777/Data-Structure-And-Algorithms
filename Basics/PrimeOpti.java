@@ -25,6 +25,7 @@ public class PrimeOpti {
                 System.out.println("prime");
             }
         }
+        scn.close();
   
     }    
 }

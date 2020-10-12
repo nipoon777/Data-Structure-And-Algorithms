@@ -1,6 +1,5 @@
 package FunctionsAndArrays;
 
-import java.io.*;
 import java.util.*;
 
 public class SubSets{
@@ -35,6 +34,7 @@ public static void main(String[] args) throws Exception {
         }
         System.out.println(sb);
     }
+    scn.close();
  }
 
 }

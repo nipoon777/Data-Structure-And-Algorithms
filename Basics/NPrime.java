@@ -19,6 +19,7 @@ public class NPrime {
             if( div * div > n)
             System.out.println(n);
         }
+        scn.close();
     }
     
 }

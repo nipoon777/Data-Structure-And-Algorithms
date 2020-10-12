@@ -1,6 +1,5 @@
 package FunctionsAndArrays;
 
-import java.io.*;
 import java.util.*;
 
 public class SpanArray{
@@ -25,6 +24,7 @@ public static void main(String[] args) throws Exception {
             min = arr[i];
     }
     System.out.println(max - min);
+    scn.close();
     
 }
 

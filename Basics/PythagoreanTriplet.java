@@ -27,5 +27,6 @@ public class PythagoreanTriplet {
              flag = ((b * b + a *a) == c * c);
         }
         System.out.println(flag);
+        scn.close();
     }    
 }

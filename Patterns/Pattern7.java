@@ -16,6 +16,6 @@ public class Pattern7 {
             }
             System.out.println("*\t");
         }
-        
+        scn.close();
     }    
 }

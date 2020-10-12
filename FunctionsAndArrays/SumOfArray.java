@@ -1,6 +1,5 @@
 package FunctionsAndArrays;
 
-import java.io.*;
 import java.util.*;
 
 public class SumOfArray{
@@ -21,7 +20,7 @@ public static void main(String[] args) throws Exception {
     for(int i = 0 ; i < n2 ; i++){
         arr2[i] = scn.nextInt();
     }
-    
+    scn.close();
     int[] sarr = new int[ n1 > n2 ? n1 : n2];
     
     int i = arr1.length - 1;
@@ -52,6 +51,7 @@ public static void main(String[] args) throws Exception {
     for( i = 0 ; i < sarr.length ; i++){
         System.out.println(sarr[i]);
     }
+    
  }
 
 }

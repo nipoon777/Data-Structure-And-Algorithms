@@ -14,6 +14,7 @@ import java.util.*;
       int res = getDecimalToAny(dec, destBase);
       
       System.out.println(res);
+      scn.close();
    } 
    
    public static int getValueIndecimal(int n, int b){

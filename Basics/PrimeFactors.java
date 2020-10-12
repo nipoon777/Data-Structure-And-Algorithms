@@ -15,5 +15,6 @@ public class PrimeFactors {
         }
         if( n != 1)
         System.out.print(n);
+        scn.close();
     }    
 }

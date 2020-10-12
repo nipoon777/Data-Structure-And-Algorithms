@@ -16,5 +16,6 @@ public class InverseNumber {
             p++;
         }
         System.out.println(s);
+        scn.close();
     }    
 }

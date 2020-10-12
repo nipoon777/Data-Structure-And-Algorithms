@@ -11,6 +11,7 @@ public class DecimalToAny {
         int res = getDecimalToAny(n, b);
 
         System.out.println(res);
+        scn.close();
     }
     
     public static int getDecimalToAny(int n , int b) {
