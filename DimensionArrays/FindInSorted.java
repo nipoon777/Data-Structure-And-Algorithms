@@ -17,7 +17,7 @@ public class FindInSorted {
         
         int s = scn.nextInt();
 
-
+        scn.close();
         int i = 0;
         int j = a.length - 1;
 
@@ -33,6 +33,6 @@ public class FindInSorted {
             }
         }
         System.out.println("Not found");
-        scn.close();
+        
     }    
 }

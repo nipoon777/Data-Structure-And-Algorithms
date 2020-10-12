@@ -1,5 +1,4 @@
 package DimensionArrays;
-import java.io.*;
 import java.util.*;
 
 public class DArray{
@@ -24,6 +23,8 @@ public static void main(String[] args) throws Exception {
         }
         System.out.println();
     }
+
+    scn.close();
  }
 
 }

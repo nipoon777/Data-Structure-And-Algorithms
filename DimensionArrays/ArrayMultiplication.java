@@ -28,6 +28,7 @@ public class ArrayMultiplication {
             }
         }
 
+        scn.close();
         if( m1 != n1){
             System.out.println("Invalid input");
             return;
@@ -48,6 +49,7 @@ public class ArrayMultiplication {
                 System.out.println();
             }
         }
+        
 
 
     }

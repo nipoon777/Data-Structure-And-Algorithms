@@ -28,6 +28,7 @@ public class WaveTraversal {
             }
             
         }
+        scn.close();
 
     }    
 }
