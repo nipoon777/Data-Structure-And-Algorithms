@@ -11,5 +11,7 @@ public class SplitFunction {
             System.out.println(res[i]);
         }
         scn.close();
+        int a = 'a' ;
+        System.out.println(a);
     }    
 }
