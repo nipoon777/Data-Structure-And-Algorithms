@@ -1,5 +1,5 @@
 package IntroRecursion;
-import java.util.*;
+ import java.util.*;
 
 public class PowerLinear {
     public static void main(String[] args) {
@@ -9,6 +9,8 @@ public class PowerLinear {
         int n = scn.nextInt();
         System.out.println(power(x,n));
         scn.close();
+
+        
         
     }
 
