@@ -30,7 +30,7 @@ public class Palindrome {
 		    {
 		        String ss = str.substring(i,j);
 		        
-		        if(isPalindrome(ss) == true){
+		        if(isPalindrome(ss)){
 		            System.out.println(ss);
 		        }
 		    }
