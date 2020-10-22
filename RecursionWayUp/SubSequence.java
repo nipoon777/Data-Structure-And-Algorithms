@@ -3,7 +3,7 @@ package RecursionWayUp;
 import java.util.*;
 
 public class SubSequence {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
         String ques = scn.next();
         
