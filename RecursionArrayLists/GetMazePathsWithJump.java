@@ -28,13 +28,15 @@ public class GetMazePathsWithJump {
         }
         ArrayList<String> paths = new ArrayList<>();
         
-        
+        //horizontal Path
         for(int ms = 1 ; ms <= dc - sc ; ms++){
             ArrayList<String> hpaths = getMazePaths(sr, sc + ms , dr, dc);
             for(String hpath : hpaths){
                 paths.add("h" + ms + hpath);
             }
         }
+
+        //vertical Path
         for(int ms = 1 ; ms <= dr - sr ; ms++){
             ArrayList<String> vpaths = getMazePaths(sr + ms, sc, dr, dc);
             for(String vpath : vpaths){
@@ -42,6 +44,7 @@ public class GetMazePathsWithJump {
             }
         }
         
+        //Diagonal Path
         for(int ms = 1 ; ms <= dr - sr && ms <= dc - sc ; ms++){
             ArrayList<String> dpaths = getMazePaths(sr + ms, sc + ms, dr, dc);
             for(String dpath : dpaths){
