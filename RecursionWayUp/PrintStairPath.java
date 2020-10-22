@@ -3,7 +3,7 @@ import java.util.*;
 
 
 public class PrintStairPath {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
         
         int n = scn.nextInt();
