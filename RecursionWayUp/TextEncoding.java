@@ -38,7 +38,7 @@ public class TextEncoding {
             char ch = ques.charAt(0);
             String roq = ques.substring(1);
             
-            if(ch == 0){
+            if(ch == '0'){
                 return;
             }
             else{
