@@ -49,6 +49,7 @@ public class SelectionSort {
         }
         selectionSort(arr);
         print(arr);
+        scn.close();
       }
     
 }
