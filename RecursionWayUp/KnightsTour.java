@@ -28,6 +28,8 @@ public class KnightsTour {
             chess[row][col] = 0;
             return;
 
+            
+
         }
         chess[row][col] = level;
         printKnightTour(chess, row - 2, col + 1, level + 1);
