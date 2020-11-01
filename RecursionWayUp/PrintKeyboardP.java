@@ -23,6 +23,8 @@ public class PrintKeyboardP {
             System.out.println(ans);
             return;
         }
+         
+
         
         char code = ques.charAt(0);
         String roq = ques.substring(1);
