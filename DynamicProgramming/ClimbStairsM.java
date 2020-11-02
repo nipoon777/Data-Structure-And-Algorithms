@@ -9,6 +9,8 @@ public class ClimbStairsM {
         
         Scanner scn = new Scanner(System.in);
         
+
+        
         int n = scn.nextInt();
         
         int[] arr = new int[n];
