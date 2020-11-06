@@ -1,4 +1,4 @@
-package RecursionWayUp;
+package RecursionBackTracking;
 
 import java.util.*;
 

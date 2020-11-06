@@ -53,7 +53,6 @@ public class GetMazePathsWithJump {
         }
         
         return paths;
-        
     }
     
 }
