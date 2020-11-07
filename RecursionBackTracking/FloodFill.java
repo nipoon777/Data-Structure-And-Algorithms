@@ -39,6 +39,8 @@ public class FloodFill {
         floodFill(maze, r + 1, c, psf + "d", visited);
         floodFill(maze, r, c + 1, psf + "r", visited);
         visited[r][c] = false;
+
+        
     }
     
 }
