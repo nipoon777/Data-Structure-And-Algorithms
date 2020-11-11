@@ -1,8 +1,9 @@
 package DynamicProgramming;
 
+
 import java.util.*;
 
-public class TargetSumDp {
+public class TargetSum {
 
     public static void main(String[] args) {
         
@@ -49,3 +50,4 @@ public class TargetSumDp {
 
     }
 }
+
