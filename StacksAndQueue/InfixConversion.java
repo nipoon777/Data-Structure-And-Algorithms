@@ -18,7 +18,7 @@ public class InfixConversion{
             
             if(ch == '('){
                 opretor.push(ch);
-            }else if( (ch >= '0' && ch <= '0') ||
+            }else if( (ch >= '0' && ch <= '9') ||
                       (ch >= 'a' && ch <= 'z') ||
                       (ch >= 'A' && ch <= 'Z')){
                 prefix.push(ch + "");
