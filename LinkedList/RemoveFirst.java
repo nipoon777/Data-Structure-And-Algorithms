@@ -2,8 +2,7 @@ package LinkedList;
 
 import java.io.*;
 
-
-public class DisplayList {
+public class RemoveFirst {
   public static class Node {
     int data;
     Node next;
@@ -30,18 +29,28 @@ public class DisplayList {
     }
 
     public int size(){
-      // write code here
       return size;
     }
 
     public void display(){
-        Node temp = head;
-        
-        while( temp != null){
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        }
-        System.out.println();
+      for(Node temp = head; temp != null; temp = temp.next){
+        System.out.print(temp.data + " ");
+      }
+      System.out.println();
+    }
+
+    public void removeFirst(){
+      if(size == 0){
+                System.out.println("List is empty");
+            }else if(size == 1){
+                head = tail = null;
+                size--;
+            }else{
+                Node temp = head;
+                head = temp.next;
+                temp.next = null;
+                size--;
+            }
     }
   }
 
@@ -50,7 +59,7 @@ public class DisplayList {
     LinkedList list = new LinkedList();
 
     String str = br.readLine();
-    while(!str.equals("quit")){
+    while(str.equals("quit") == false){
       if(str.startsWith("addLast")){
         int val = Integer.parseInt(str.split(" ")[1]);
         list.addLast(val);
@@ -58,6 +67,8 @@ public class DisplayList {
         System.out.println(list.size());
       } else if(str.startsWith("display")){
         list.display();
+      } else if(str.startsWith("removeFirst")){
+        list.removeFirst();
       }
       str = br.readLine();
     }
