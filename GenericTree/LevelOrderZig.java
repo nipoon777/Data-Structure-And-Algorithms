@@ -99,7 +99,7 @@ public class LevelOrderZig {
         Stack<Node> cs = new Stack<>();
         int level = 1;
         
-        while(ms.size() > 0){
+        while(!ms.isEmpty()){
             node = ms.pop();
             System.out.print(node.data + " ");
             
@@ -114,7 +114,7 @@ public class LevelOrderZig {
             }
             
             
-            if(ms.size() == 0){
+            if(ms.isEmpty()){
                 ms = cs;
                 cs = new Stack<>();
                 level++;
