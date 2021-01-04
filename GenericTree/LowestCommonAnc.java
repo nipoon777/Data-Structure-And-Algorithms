@@ -3,7 +3,7 @@ package GenericTree;
 import java.io.*;
 import java.util.*;
 
-public class Find {
+public class LowestCommonAnc {
     private static class Node {
         int data;
         ArrayList < Node > children = new ArrayList < > ();
@@ -46,18 +46,39 @@ public class Find {
         return root;
     }
 
-    public static boolean find(Node node, int data) {
-        if(node.data == data){
-            return true;
+    public static ArrayList < Integer > nodeToRootPath(Node node, int data) {
+        if (node.data == data) {
+            ArrayList < Integer > path = new ArrayList < > ();
+            path.add(node.data);
+            return path;
         }
-        
-        for(Node child : node.children){
-            boolean fic = find(child, data);
-            if(fic){
-                return true;
+
+        for (Node child: node.children) {
+            ArrayList < Integer > ptc = nodeToRootPath(child, data);
+            if (ptc.size() > 0) {
+                ptc.add(node.data);
+                return ptc;
             }
         }
-        return false;
+
+        return new ArrayList < > ();
+    }
+
+    public static int lca(Node node, int d1, int d2) {
+        ArrayList < Integer > p1 = nodeToRootPath(node, d1);
+        ArrayList < Integer > p2 = nodeToRootPath(node, d2);
+        
+        int i = p1.size() - 1;
+        int j = p2.size() - 1;
+        
+        while(i >= 0 && j >= 0 && p1.get(i).equals(p2.get(j))){
+            i--;
+            j--;
+        }
+        
+        i++;
+        
+        return p1.get(i);
     }
 
     public static void main(String[] args) throws Exception {
@@ -69,11 +90,13 @@ public class Find {
             arr[i] = Integer.parseInt(values[i]);
         }
 
-        int data = Integer.parseInt(br.readLine());
+        int d1 = Integer.parseInt(br.readLine());
+        int d2 = Integer.parseInt(br.readLine());
 
         Node root = construct(arr);
-        boolean flag = find(root, data);
-        System.out.println(flag);
+        int lca = lca(root, d1, d2);
+        System.out.println(lca);
+        // display(root);
     }
 
 }
