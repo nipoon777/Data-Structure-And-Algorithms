@@ -3,7 +3,7 @@ package BinaryTree;
 import java.io.*;
 import java.util.*;
 
-public class DiameterIMP {
+public class Tilt {
     public static class Node {
         int data;
         Node left;
@@ -93,44 +93,22 @@ public class DiameterIMP {
         return th;
     }
 
-    public static int diameter1(Node node) {
+    static int tilt = 0;
+    public static int tilt(Node node) {
         if(node == null){
             return 0;
         }
-        int ld = diameter1(node.left);
-        int rd = diameter1(node.right);
-        //When Diameter lies on the either side
-        int fHt = height(node.left) + height(node.right) + 2;
-        
-        int dia = Math.max(fHt, Math.max(ld,rd));
-        return dia;
-    }
     
-    static class DiaPair{
-        int ht;
-        int dia;
-    }
-    
-    public static DiaPair diameter2(Node node){
-        if(node == null){
-            DiaPair bp = new DiaPair();
-            bp.ht = -1;
-             bp.dia = 0;
-            
-            return bp;
-        }
-        DiaPair ld = diameter2(node.left);
-        DiaPair rd = diameter2(node.right);
+        int ls = tilt(node.left);
+        int rs = tilt(node.right);
         
-        DiaPair mp = new DiaPair();
+        int ltilt = Math.abs(ls - rs);
         
-        mp.ht = Math.max(ld.ht, rd.ht) + 1;
+        tilt += ltilt;
         
-        int fact = ld.ht + rd.ht + 2;
+        int ts = ls + rs + node.data;
         
-        mp.dia = Math.max(fact, Math.max(ld.dia, rd.dia));
-        
-        return mp;
+        return ts;
     }
 
     public static void main(String[] args) throws Exception {
@@ -147,12 +125,9 @@ public class DiameterIMP {
         }
 
         Node root = construct(arr);
-        DiaPair res = diameter2(root);
-        
-        System.out.println(res.dia);
-        // int diameter = 0;
-        // diameter = diameter1(root);
-        // System.out.println(diameter);
+
+        tilt(root);
+        System.out.println(tilt);
     }
 
 }
