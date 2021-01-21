@@ -1,6 +1,5 @@
 package HashMap;
 
-import java.io.*;
 import java.util.*;
 
 public class ContainsElements2 {
