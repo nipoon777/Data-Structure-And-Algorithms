@@ -32,6 +32,9 @@ public class Basics {
         Set <String> keys = hm.keySet();
         
         System.out.println(keys);
+
+
+        
         
         for(String key : hm.keySet() ){
             int val = hm.get(key);
