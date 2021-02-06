@@ -14,8 +14,9 @@ public class DiagonalTraversal {
             }
         }
 
-        for(int g = 0 ; g < a.length ; g++){
-            for(int i = 0 , j = g ; j < a.length ; j++,i++){
+        for(int gap = 0 ; gap < a.length ; gap++){
+            //j Sabse pehle pohachta hai destination iss liye J ke liye inner loop likha
+            for(int i = 0 , j = gap ; j < a.length ; j++,i++){
                 System.out.println(a[i][j]);
             }
         }
