@@ -9,7 +9,7 @@ public class NQueens {
     int n = scn.nextInt();
     boolean[][] board = new boolean[n][n];
     //write your code here
-    
+    scn.close();
     boolean[] cols = new boolean[n];
     boolean[] normalD = new boolean[ 2* n - 1 ];
     boolean[] revD = new boolean[ 2 * n - 1];
