@@ -39,7 +39,6 @@ public static void main(String[] args) throws Exception {
          while(!st.isEmpty() && arr[i] > arr[st.peek()]){
              st.pop();
          }
-         
          if(st.isEmpty()){
             span[i] = i + 1; 
          }else{
