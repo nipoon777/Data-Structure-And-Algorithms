@@ -14,6 +14,18 @@ public class PriorityQueUsage{
             this.comp = comp;
         }
 
+        PriorityQueue(T[] input){
+            data = new ArrayList<>();
+            comp = null;
+            for(T val : input){
+                data.add(val);
+            }
+
+            for(int idx = (data.size() - 2) / 2 ; idx >= 0 ; idx--){
+                downheapify(idx);
+            }
+        }
+
         public void add(T val){
             data.add(val);
             upheapify(data.size() - 1);
@@ -94,6 +106,18 @@ public class PriorityQueUsage{
         public int size(){
             return data.size();
         }
+
+        public void display(){
+            int pidx = 0;
+            int leftIdx = 1;
+            int rightIdx = 2;
+            while( leftIdx < data.size() && rightIdx < data.size()){
+                System.out.println(data.get(leftIdx) + " <-- " + data.get(pidx) + "-->" + data.get(rightIdx));
+                pidx++;
+                leftIdx = 2 * pidx + 1;
+                rightIdx = 2 * pidx + 2;
+            }
+        }
     }
     public static class Student implements Comparable <Student>{
         private int rollNo;
@@ -131,16 +155,18 @@ public class PriorityQueUsage{
     
 
     public static void main(String[] args) {
+        Integer[] inp = {10, 30, 40, 60, 50, 70, 90, 110, 100, 120, 80, 130, 20};
         
-        PriorityQueue < Student > pq = new PriorityQueue<>(new StudentRankComp());
+        PriorityQueue < Integer > pq = new PriorityQueue<>(inp);
 
-        pq.add( new Student(1, 54, 3));
+        /* pq.add( new Student(1, 54, 3));
         pq.add( new Student(2, 75, 2));
         pq.add( new Student(3, 45, 10));
         pq.add( new Student(10, 35, 15));
         pq.add( new Student(17, 15, 25));
-        pq.add( new Student(12, 80, 1));
+        pq.add( new Student(12, 80, 1)); */
 
+        pq.display();
         while( pq.size() > 0 ){
             System.out.println(pq.remove());
         }
