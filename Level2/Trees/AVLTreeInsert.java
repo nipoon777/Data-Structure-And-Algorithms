@@ -156,8 +156,8 @@
             b.right = a;
             a.left = T2;
             
-            a.height = Math.max(height(a.left), height(a.right)) + 1;
-            b.height = Math.max(height(b.left), height(b.right)) + 1;
+            a.height = Math.max(height(a.left), height(a.right)) ;
+            b.height = Math.max(height(b.left), height(b.right)) ;
             
             return b;
         }
@@ -170,8 +170,8 @@
             b.left = a;
             a.right = T2;
             
-            a.height = Math.max(height(a.left), height(a.right)) + 1;
-            b.height = Math.max(height(b.left), height(b.right)) + 1;
+            a.height = Math.max(height(a.left), height(a.right)) ;
+            b.height = Math.max(height(b.left), height(b.right)) ;
             
             return b;
             
