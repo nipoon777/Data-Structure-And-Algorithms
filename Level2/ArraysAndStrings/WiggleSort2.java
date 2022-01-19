@@ -25,6 +25,4 @@ public class Solution {
         }
         
     }
-}class WiggleSort2 {
-    
 }
